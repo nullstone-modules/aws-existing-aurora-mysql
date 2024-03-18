@@ -1,0 +1,13 @@
+org_name: nullstone
+name: aws-existing-aurora-mysql
+friendly_name: Existing Aurora MySQL
+description: Import an existing Aurora MySQL cluster
+category: datastore
+subcategory: ""
+provider_types:
+    - aws
+platform: mysql
+subplatform: aurora
+type: ""
+appCategories: []
+is_public: true
