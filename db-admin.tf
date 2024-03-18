@@ -3,7 +3,7 @@ module "db_admin" {
 
   name     = local.resource_name
   tags     = local.tags
-  host     = data.aws_db_instance.this.address
+  host     = data.aws_rds_cluster.this.endpoint
   username = var.db_admin_username
   password = var.db_admin_password
 

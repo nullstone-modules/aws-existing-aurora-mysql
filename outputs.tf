@@ -4,7 +4,7 @@ output "db_instance_arn" {
 }
 
 output "db_instance_id" {
-  value       = data.aws_db_instance.this.id
+  value       = data.aws_rds_cluster.this.id
   description = "string ||| ID of the Postgres instance"
 }
 
@@ -14,7 +14,7 @@ output "db_master_secret_name" {
 }
 
 output "db_endpoint" {
-  value       = data.aws_db_instance.this.endpoint
+  value       = data.aws_rds_cluster.this.endpoint
   description = "string ||| The endpoint URL to access the Postgres instance."
 }
 

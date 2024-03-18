@@ -3,5 +3,5 @@ data "aws_rds_cluster" "this" {
 }
 
 locals {
-  db_security_group_id = data.aws_rds_cluster.this.vpc_security_group_ids[0]
+  db_security_group_id = one(data.aws_rds_cluster.this.vpc_security_group_ids)
 }
