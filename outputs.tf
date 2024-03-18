@@ -1,5 +1,5 @@
 output "db_instance_arn" {
-  value       = data.aws_db_instance.this.db_instance_arn
+  value       = data.aws_rds_cluster.this.arn
   description = "string ||| ARN of the Postgres instance"
 }
 
