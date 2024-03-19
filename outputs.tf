@@ -14,7 +14,7 @@ output "db_master_secret_name" {
 }
 
 output "db_endpoint" {
-  value       = db_endpoint
+  value       = local.db_endpoint
   description = "string ||| The endpoint URL to access the Postgres instance."
 }
 
